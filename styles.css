@@ -1,0 +1,114 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Space Themed Background */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #000;
+    color: #f8f8f8; /* Slightly softer white */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll, but allows vertical */
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Glassmorphism Effect */
+.glass-box {
+    background: rgba(243, 235, 40, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(243, 235, 40, 0.4);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for glass boxes */
+.glass-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 40px rgba(243, 235, 40, 0.5);
+    border-color: rgba(243, 235, 40, 0.6);
+}
+
+/* Center All Headings */
+h1, h2 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Improve Paragraph Readability */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Section Headers */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.refresh-button {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    color: white;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.3);
+    margin-top: 10px;
+}
+
+/* Hover effect for buttons */
+.refresh-button:hover {
+    background: linear-gradient(135deg, #ff4500, #ffcc00);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.5);
+}
+
+/* Images */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}

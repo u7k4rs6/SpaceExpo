@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Space Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="fetchTrivia(); fetchNews(); fetchRoverPhotos();">
+
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://videos.pexels.com/video-files/15694882/15694882-uhd_2560_1440_48fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <h1>Space Exploration Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Space Trivia Section -->
+        <section class="glass-box">
+            <div class="section-header">
+                <h2>🌌 Space Fact</h2>
+                <button class="refresh-button" onclick="fetchTrivia()">🔄 Refresh</button>
+            </div>
+            <div id="trivia-content">
+                <p>⏳ Loading Space Trivia...</p>
+            </div>
+        </section>
+
+        <!-- Space News Section -->
+        <section class="glass-box">
+            <div class="section-header">
+                <h2>📰 Latest Space News</h2>
+            </div>
+            <div id="news-content">
+                <p>⏳ Fetching space news...</p>
+            </div>
+        </section>
+
+        <!-- Mars Rover Photos Section -->
+        <section class="glass-box">
+            <div class="section-header">
+                <h2>📸 Mars Rover Photos</h2>
+            </div>
+            <div id="rover-content">
+                <p>⏳ Loading Mars photos...</p>
+            </div>
+        </section>
+
+        <!-- NASA Image & Video Library -->
+        <section class="glass-box">
+            <div class="section-header">
+                <h2>🔭 NASA Image & Video Library</h2>
+                <button class="refresh-button" onclick="openNASAResources()">📷 Open</button>
+            </div>
+            <p>Explore NASA's official media library.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
